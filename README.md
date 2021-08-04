@@ -4,7 +4,7 @@
 
 ## This is a sample project including the features:
 
-### - Slideshow
+### - Responsive Slider
 
 ### - Go To Top Button feature
 
