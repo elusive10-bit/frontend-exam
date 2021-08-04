@@ -1,0 +1,321 @@
+@keyframes image-fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+.to-top {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  right: 50px;
+  opacity: 0.9;
+}
+.to-top button {
+  padding: 15px 20px;
+  background-color: #cfcfcf;
+  border: none;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+body p {
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+body header {
+  flex: 1;
+}
+body .overlay-nav {
+  display: none;
+  background-color: #555555;
+  z-index: 3;
+  flex-flow: column wrap;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px black;
+}
+@media (min-width: 320px) {
+  body .overlay-nav {
+    width: 100%;
+  }
+}
+body .overlay-nav ul li {
+  padding: 10px;
+  list-style-type: none;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 1.4rem;
+  color: #c7c7c7;
+}
+body .overlay-nav span {
+  align-self: flex-end;
+  padding: 10px;
+  color: #fff;
+}
+body .overlay-nav span img {
+  width: 30px;
+  height: 30px;
+}
+body .overlay-nav li:hover {
+  background-color: #2e2d2d;
+  color: #fff;
+}
+body .main-nav {
+  background-color: #6f6f6f;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+body .main-nav .logo img {
+  width: 40px;
+}
+body .main-nav .desktop-nav {
+  align-items: center;
+}
+@media (min-width: 320px) {
+  body .main-nav .desktop-nav {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  body .main-nav .desktop-nav {
+    display: flex;
+  }
+}
+@media (min-width: 320px) {
+  body .main-nav .burger-menu {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  body .main-nav .burger-menu {
+    display: none;
+  }
+}
+body .main-nav ul li {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+body .main-nav ul li:not(li:last-child) {
+  margin-right: 40px;
+}
+body .main {
+  flex: 1;
+}
+@media (min-width: 1440px) {
+  body .main {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+body .main .slider-container {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  background-color: #8a8a8a;
+  color: #fff;
+  background-color: #c7c7c7;
+}
+body .main .slider-container .slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 320px) {
+  body .main .slider-container .slider {
+    width: 240px;
+  }
+}
+@media (min-width: 428px) {
+  body .main .slider-container .slider {
+    width: 300px;
+  }
+}
+@media (min-width: 728px) {
+  body .main .slider-container .slider {
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  body .main .slider-container .slider {
+    width: 800px;
+  }
+}
+body .main .slider-container .slider img {
+  width: 100%;
+}
+body .main .slider-container .slider,
+body .main .slider-container h2 {
+  flex: 1;
+}
+body .main .slider-container .slider {
+  position: relative;
+  animation-name: image-fade;
+  animation-duration: 1s;
+}
+body .main .slider-container img {
+  display: flex;
+}
+body .main .slider-container .left {
+  display: none;
+  background-color: rgba(116, 116, 116, 0.541);
+  position: absolute;
+  flex-flow: column wrap;
+  justify-content: center;
+  left: 0;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media (min-width: 768px) {
+  body .main .slider-container .left {
+    display: flex;
+  }
+}
+body .main .slider-container .left:hover,
+body .main .slider-container .right:hover {
+  background-color: #252525;
+}
+body .main .slider-container .caption {
+  padding: 20px;
+  position: absolute;
+  background-color: rgba(29, 29, 29, 0.767);
+  font-size: 1.4rem;
+  color: #fff;
+}
+body .main .slider-container .right {
+  display: none;
+  background-color: rgba(116, 116, 116, 0.541);
+  flex-flow: column wrap;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media (min-width: 768px) {
+  body .main .slider-container .right {
+    display: flex;
+  }
+}
+@media (min-width: 320px) {
+  body .main .slider-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  body .main .slider-container {
+    flex: 1;
+  }
+}
+body .main .content {
+  background-color: #8a8a8a;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+body .main .content .image-placeholder {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .main .content .image-placeholder img {
+  width: 100%;
+}
+body .main .content > aside,
+body .main .content > section {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 10px;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+@media (min-width: 320px) {
+  body .main .content > aside,
+body .main .content > section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+body .main .content > aside p,
+body .main .content > section p {
+  flex: 1;
+}
+body footer {
+  background-color: #6f6f6f;
+  color: #fff;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+body footer h3 {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
