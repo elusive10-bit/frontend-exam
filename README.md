@@ -1,4 +1,4 @@
-# ewave-frontend-exam
+# frontend-exam
 
 ## This project answers the Tasks 1-3 of the exam
 
