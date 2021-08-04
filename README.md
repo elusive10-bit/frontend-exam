@@ -4,7 +4,7 @@
 
 ## This is a sample project including the features:
 
-### Slideshow
+### - Slideshow
 
-### Go To Top Button feature
+### - Go To Top Button feature
 
