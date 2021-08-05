@@ -134,6 +134,15 @@ body {
 			@media (min-width: 1024px) {
 				display: flex;
 			}
+
+			li {
+				padding: 10px 15px;
+			}
+
+			li:hover {
+				border-bottom: 1px solid;
+				color: rgb(201, 201, 202);
+			}
 		}
 
 		.burger-menu {
@@ -160,6 +169,7 @@ body {
 
 	.main {
 		flex: 1;
+
 		@media (min-width: 1440px) {
 			display: flex;
 			flex-flow: row wrap;
@@ -169,9 +179,10 @@ body {
 			display: flex;
 			flex-flow: column wrap;
 			@include padding();
-			background-color: $secondary-color;
+			// background-color: $secondary-color;
+			background-color: #fff;
 			color: $font-color;
-			background-color: rgb(199, 199, 199);
+			// background-color: rgb(199, 199, 199);
 
 			.slider {
 				display: flex;
@@ -179,7 +190,7 @@ body {
 				justify-content: center;
 				align-items: center;
 				@media (min-width: 320px) {
-					width: 240px;
+					width: 300px;
 				}
 				@media (min-width: 428px) {
 					width: 300px;
@@ -265,7 +276,7 @@ body {
 		}
 
 		.content {
-			background-color: $secondary-color;
+			background-color: #fff;
 			color: $font-color;
 			display: flex;
 			flex-flow: row wrap;
@@ -284,7 +295,7 @@ body {
 			}
 
 			> section {
-				background-color: #fff;
+				border: 1px solid rgb(145, 145, 145);
 				color: #000;
 				@include padding();
 				flex: 1;

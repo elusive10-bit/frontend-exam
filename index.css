@@ -116,6 +116,13 @@ body .main-nav .desktop-nav {
     display: flex;
   }
 }
+body .main-nav .desktop-nav li {
+  padding: 10px 15px;
+}
+body .main-nav .desktop-nav li:hover {
+  border-bottom: 1px solid;
+  color: #c9c9ca;
+}
 @media (min-width: 320px) {
   body .main-nav .burger-menu {
     display: flex;
@@ -151,9 +158,8 @@ body .main .slider-container {
   padding-right: 10px;
   padding-top: 12px;
   padding-bottom: 20px;
-  background-color: #8a8a8a;
+  background-color: #fff;
   color: #fff;
-  background-color: #c7c7c7;
 }
 body .main .slider-container .slider {
   display: flex;
@@ -163,7 +169,7 @@ body .main .slider-container .slider {
 }
 @media (min-width: 320px) {
   body .main .slider-container .slider {
-    width: 240px;
+    width: 300px;
   }
 }
 @media (min-width: 428px) {
@@ -252,7 +258,7 @@ body .main .slider-container .right {
   }
 }
 body .main .content {
-  background-color: #8a8a8a;
+  background-color: #fff;
   color: #fff;
   display: flex;
   flex-flow: row wrap;
@@ -274,7 +280,7 @@ body .main .content .image-placeholder img {
   width: 100%;
 }
 body .main .content > section {
-  background-color: #fff;
+  border: 1px solid #919191;
   color: #000;
   padding: 10px;
   padding-left: 10px;
