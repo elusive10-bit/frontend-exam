@@ -151,9 +151,8 @@ body .main .slider-container {
   padding-right: 10px;
   padding-top: 12px;
   padding-bottom: 20px;
-  background-color: #8a8a8a;
+  background-color: #fff;
   color: #fff;
-  background-color: #c7c7c7;
 }
 body .main .slider-container .slider {
   display: flex;
@@ -252,7 +251,7 @@ body .main .slider-container .right {
   }
 }
 body .main .content {
-  background-color: #8a8a8a;
+  background-color: #fff;
   color: #fff;
   display: flex;
   flex-flow: row wrap;
@@ -273,9 +272,8 @@ body .main .content .image-placeholder {
 body .main .content .image-placeholder img {
   width: 100%;
 }
-body .main .content > aside,
 body .main .content > section {
-  background-color: #fff;
+  border: 1px solid #ccc;
   color: #000;
   padding: 10px;
   padding-left: 10px;
@@ -289,14 +287,12 @@ body .main .content > section {
   margin-top: 10px;
 }
 @media (min-width: 320px) {
-  body .main .content > aside,
-body .main .content > section {
+  body .main .content > section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
 }
-body .main .content > aside p,
 body .main .content > section p {
   flex: 1;
 }
