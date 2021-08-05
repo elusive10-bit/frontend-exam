@@ -162,7 +162,7 @@ body .main .slider-container .slider {
 }
 @media (min-width: 320px) {
   body .main .slider-container .slider {
-    width: 240px;
+    width: 400px;
   }
 }
 @media (min-width: 428px) {
@@ -273,7 +273,7 @@ body .main .content .image-placeholder img {
   width: 100%;
 }
 body .main .content > section {
-  border: 1px solid #ccc;
+  border: 1px solid #919191;
   color: #000;
   padding: 10px;
   padding-left: 10px;
