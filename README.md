@@ -4,6 +4,8 @@
 
 ## This is a sample project including the features:
 
+### - Responsive Design
+
 ### - Responsive Slider
 
 ### - Go To Top Button feature
