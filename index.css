@@ -273,7 +273,6 @@ body .main .content .image-placeholder {
 body .main .content .image-placeholder img {
   width: 100%;
 }
-body .main .content > aside,
 body .main .content > section {
   background-color: #fff;
   color: #000;
@@ -289,14 +288,12 @@ body .main .content > section {
   margin-top: 10px;
 }
 @media (min-width: 320px) {
-  body .main .content > aside,
-body .main .content > section {
+  body .main .content > section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
 }
-body .main .content > aside p,
 body .main .content > section p {
   flex: 1;
 }
