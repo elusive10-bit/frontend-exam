@@ -134,6 +134,15 @@ body {
 			@media (min-width: 1024px) {
 				display: flex;
 			}
+
+			li {
+				padding: 10px 15px;
+			}
+
+			li:hover {
+				border-bottom: 1px solid;
+				color: rgb(201, 201, 201);
+			}
 		}
 
 		.burger-menu {
@@ -181,7 +190,7 @@ body {
 				justify-content: center;
 				align-items: center;
 				@media (min-width: 320px) {
-					width: 400px;
+					width: 300px;
 				}
 				@media (min-width: 428px) {
 					width: 300px;

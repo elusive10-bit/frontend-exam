@@ -116,6 +116,13 @@ body .main-nav .desktop-nav {
     display: flex;
   }
 }
+body .main-nav .desktop-nav li {
+  padding: 10px 15px;
+}
+body .main-nav .desktop-nav li:hover {
+  border-bottom: 1px solid;
+  color: #c9c9c9;
+}
 @media (min-width: 320px) {
   body .main-nav .burger-menu {
     display: flex;
@@ -162,7 +169,7 @@ body .main .slider-container .slider {
 }
 @media (min-width: 320px) {
   body .main .slider-container .slider {
-    width: 400px;
+    width: 300px;
   }
 }
 @media (min-width: 428px) {
