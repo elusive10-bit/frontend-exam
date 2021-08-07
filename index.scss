@@ -113,6 +113,7 @@ body {
 
 	.main-nav {
 		background-color: $nav-and-footer-background;
+		border: 3px solid #ccc;
 		color: $font-color;
 		display: flex;
 		flex-flow: row wrap;
@@ -123,6 +124,31 @@ body {
 		.logo {
 			img {
 				width: 40px;
+			}
+		}
+
+		.search {
+			@media (min-width: 320px) {
+				width: 170px;
+			}
+			@media (min-width: 480px) {
+				width: 300px;
+			}
+			@media (min-width: 768px) {
+				width: 500px;
+			}
+
+			@media (min-width: 1024px) {
+				width: 300px;
+			}
+
+			li {
+				height: 100%;
+				width: 100%;
+				input {
+					width: 100%;
+					padding: 10px 20px;
+				}
 			}
 		}
 

@@ -89,6 +89,7 @@ body .overlay-nav li:hover {
 }
 body .main-nav {
   background-color: #6f6f6f;
+  border: 3px solid #ccc;
   color: #fff;
   display: flex;
   flex-flow: row wrap;
@@ -102,6 +103,34 @@ body .main-nav {
 }
 body .main-nav .logo img {
   width: 40px;
+}
+@media (min-width: 320px) {
+  body .main-nav .search {
+    width: 170px;
+  }
+}
+@media (min-width: 480px) {
+  body .main-nav .search {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  body .main-nav .search {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  body .main-nav .search {
+    width: 300px;
+  }
+}
+body .main-nav .search li {
+  height: 100%;
+  width: 100%;
+}
+body .main-nav .search li input {
+  width: 100%;
+  padding: 10px 20px;
 }
 body .main-nav .desktop-nav {
   align-items: center;
