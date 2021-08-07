@@ -113,7 +113,6 @@ body {
 
 	.main-nav {
 		background-color: $nav-and-footer-background;
-		border: 3px solid #ccc;
 		color: $font-color;
 		display: flex;
 		flex-flow: row wrap;
@@ -128,28 +127,40 @@ body {
 		}
 
 		.search {
-			@media (min-width: 320px) {
-				width: 170px;
-			}
-			@media (min-width: 480px) {
-				width: 300px;
-			}
-			@media (min-width: 768px) {
-				width: 500px;
-			}
+			display: flex;
+			flex-flow: row wrap;
+			flex: 1;
+			margin-left: 15px;
+			margin-right: 15px;
+			// @media (min-width: 320px) {
+			// 	width: 170px;
+			// }
+			// @media (min-width: 480px) {
+			// 	width: 300px;
+			// }
+			// @media (min-width: 768px) {
+			// 	width: 500px;
+			// }
 
-			@media (min-width: 1024px) {
-				width: 300px;
-			}
+			// @media (min-width: 1024px) {
+			// 	width: 300px;
+			// }
 
 			li {
-				height: 100%;
-				width: 100%;
+				flex: 1;
 				input {
 					width: 100%;
 					padding: 10px 20px;
 				}
 			}
+		}
+
+		.desktop-nav:not(.desktop-nav ~ .desktop-nav) {
+			margin-right: 30px;
+		}
+
+		.desktop-nav + .desktop-nav {
+			border-left: 1px solid #fff;
 		}
 
 		.desktop-nav {
@@ -188,7 +199,7 @@ body {
 			}
 
 			li:not(li:last-child) {
-				margin-right: 40px;
+				margin-right: 20px;
 			}
 		}
 	}
