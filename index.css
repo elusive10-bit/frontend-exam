@@ -39,9 +39,9 @@ body {
 }
 body p {
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   flex-flow: row wrap;
@@ -95,9 +95,9 @@ body .main-nav {
   justify-content: space-between;
   font-size: 1.8rem;
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 body .main-nav .logo img {
@@ -174,9 +174,9 @@ body .main .slider-container {
   display: flex;
   flex: 1;
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
   color: #fff;
@@ -284,9 +284,9 @@ body .main .content {
   display: flex;
   flex-flow: row wrap;
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 body .main .content .image-placeholder {
@@ -305,9 +305,9 @@ body .main .content > section {
   background-color: #fff;
   color: #000;
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 20px;
   padding-bottom: 20px;
   min-width: 200px;
   max-width: 500px;
@@ -331,9 +331,9 @@ body footer {
   background-color: #6f6f6f;
   color: #fff;
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
   display: flex;
