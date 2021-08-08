@@ -301,8 +301,8 @@ body .main .content .image-placeholder img {
   width: 100%;
 }
 body .main .content > section {
-  border: 1px solid #919191;
   background-color: #fff;
+  border: 1px solid #818181;
   color: #000;
   padding: 10px;
   padding-left: 13px;
@@ -336,13 +336,39 @@ body footer {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+}
+body footer .footer-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 body footer h3 {
   font-weight: 400;
   font-size: 1.1rem;
+}
+@media (min-width: 320px) {
+  body footer h3 {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  body footer h3 {
+    margin-top: 0;
+  }
+}
+body footer ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+body footer .link-group-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+body footer .link-group-container div {
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

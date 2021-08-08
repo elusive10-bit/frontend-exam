@@ -335,8 +335,8 @@ body {
 			}
 
 			> section {
-				border: 1px solid rgb(145, 145, 145);
 				background-color: #fff;
+				border: 1px solid rgb(129, 129, 129);
 				color: #000;
 				@include padding();
 				min-width: 200px;
@@ -365,12 +365,39 @@ body {
 		color: $font-color;
 		@include padding();
 		width: 100%;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
+
+		.footer-container {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
 		h3 {
 			font-weight: 400;
 			font-size: 1.1rem;
+
+			@media (min-width: 320px) {
+				margin-top: 20px;
+			}
+			@media (min-width: 1024px) {
+				margin-top: 0;
+			}
+		}
+
+		ul li {
+			text-decoration: none;
+			list-style-type: none;
+			font-size: 1rem;
+			line-height: 1.5rem;
+		}
+
+		.link-group-container {
+			display: flex;
+			flex-flow: row wrap;
+
+			div {
+				margin-right: 30px;
+			}
 		}
 	}
 }
